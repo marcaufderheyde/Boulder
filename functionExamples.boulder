@@ -1,0 +1,38 @@
+<=== 420XD69 ===> This is an example boulder program
+<=== 420XD69 ===> Lines beginning with <=== 420XD69 ===> are comments and will not be processed
+<=== 420XD69 ===> The bouldering program language uses common terms from bouldering
+<=== 420XD69 ===> Syntax is similar to python and functionality is also similar to python
+<=== 420XD69 ===> as python powers .boulder under the hood!
+<=== 420XD69 ===> You can specify the parameter type by adding a single letter after the last
+<=== 420XD69 ===> parentheses of the function call (i.e., i for int, s for string, f for float)
+<=== 420XD69 ===> Not specifying a type will use string for params by default.
+
+<=== 420XD69 ===> fullSend() prints the input in capital letters
+fullSend("my name is Marc")
+
+<=== 420XD69 ===> send() prints the input
+send("my name is Marc. This is the bouldering programming language!")
+
+<=== 420XD69 ===> crux() returns the length of the input
+crux("my name is Marc")
+
+<=== 420XD69 ===> flash() converts the input to a string
+flash(123)i
+
+<=== 420XD69 ===> block() converts the input to an integer
+block(1)
+
+<=== 420XD69 ===> slab() converts the input to a float
+slab(1)
+
+<=== 420XD69 ===> jug() returns the maximum element from a list
+jug([1,2,3])f
+
+<=== 420XD69 ===> pivot() returns the minimum element from a list
+pivot([1,2,3])f
+
+<=== 420XD69 ===> heelHook() returns a sorted version of the list passed in as input
+heelHook([1,5,2,6,3,3,4,8])i
+
+<=== 420XD69 ===> toeHook() returns the type of the input parameter
+toeHook("string")
