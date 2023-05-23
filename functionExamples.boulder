@@ -1,4 +1,6 @@
-<=== 420XD69 ===> This is an example boulder program
+<=== 420XD69 ===> This is an example boulder program which shows you examples of current standard
+<=== 420XD69 ===> library support.
+
 <=== 420XD69 ===> Lines beginning with <=== 420XD69 ===> are comments and will not be processed
 <=== 420XD69 ===> The bouldering program language uses common terms from bouldering
 <=== 420XD69 ===> Syntax is similar to python and functionality is also similar to python
@@ -7,11 +9,14 @@
 <=== 420XD69 ===> parentheses of the function call (i.e., i for int, s for string, f for float)
 <=== 420XD69 ===> Not specifying a type will use string for params by default.
 
+<=== 420XD69 ===> NOTE: Currently, typing params is unsupported in v0.1.0 when using with nested
+<=== 420XD69 ===> functions, please only use param typing with singular function calls for now.
+
 <=== 420XD69 ===> fullSend() prints the input in capital letters
 fullSend("my name is Marc")
 
 <=== 420XD69 ===> send() prints the input
-send("my name is Marc. This is the bouldering programming language!")
+send("my name is Marc. This is the bouldering programming language!")s
 
 <=== 420XD69 ===> crux() returns the length of the input
 crux("my name is Marc")
@@ -20,19 +25,36 @@ crux("my name is Marc")
 flash(123)i
 
 <=== 420XD69 ===> block() converts the input to an integer
-block(1)
+block("1")f
 
 <=== 420XD69 ===> slab() converts the input to a float
-slab(1)
+slab(10.5)s
 
 <=== 420XD69 ===> jug() returns the maximum element from a list
 jug([1,2,3])f
 
 <=== 420XD69 ===> pivot() returns the minimum element from a list
-pivot([1,2,3])f
+pivot([1,2,3])s
 
 <=== 420XD69 ===> heelHook() returns a sorted version of the list passed in as input
-heelHook([1,5,2,6,3,3,4,8])i
+heelHook([1,5,2,6,3,3,4,8])s
 
 <=== 420XD69 ===> toeHook() returns the type of the input parameter
 toeHook("string")
+
+<=== 420XD69 ===> choss() takes no parameters and reports on the sketchiness of a rock
+choss()
+
+<=== 420XD69 ===> makeRoute() takes a parameter for the height of the animation, default value of 22
+<=== 420XD69 ===>makeRoute(20)s
+
+<=== 420XD69 ===> All the above functions are working correctly with built in error checking 
+<=== 420XD69 ===> The addition of the choss() function and makeRoute(height) function as well as error 
+<=== 420XD69 ===> checking constitute v0.0.2 of the Boulder programming language and BoulderInterpreter
+<=== 420XD69 ===> v0.1.0 will include support for nested function calls.
+<=== 420XD69 ===> v0.2.0 will include support for function definitions.
+
+<=== 420XD69 ===> The below chained functions work as expected, however, typing parameters is not yet supported
+<=== 420XD69 ===> for chained function calls
+send(slab(flash(10.0)))
+send(jug([1,2,3]))
