@@ -2,7 +2,10 @@
 A programming language called boulder which uses bouldering slang and lingo as it's standard library function names, uses python for the interpreter.
 
 ## Current supported functionality:
-Below are the supported functions as of v0.0.1.
+
+In version 0.1.0, Boulder implemented support for nested function calls, i.e., `send(crux("Marc"))`. However, nested function calls do not support parameter typing as of yet, this only works for single function calls, like so: `block(10)s`, where s types the parameter 10 as a string rather than the default int implementation. 
+
+Below are the supported functions as of v0.1.0. Functions added in this version are listed in ***bold italics***.
 
 | Boulder function  | Python equivalent |
 | ------------- | ------------- |
@@ -16,6 +19,8 @@ Below are the supported functions as of v0.0.1.
 | pivot(list)  | min(list) |
 | heelHook(list)  | sorted(list) |
 | toeHook()  | type() |
+| ***choss()***  | ***custom function which comments on the quality of a certain hold*** |
+| ***makeRoutes(routeHeight)***  | ***custom function which animates a bouldering route being created*** |
 
 You can make comments in .boulder program files by using `<=== 420XD69 ===>` at the start of a line, like so:
 ```
