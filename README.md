@@ -3,9 +3,21 @@ A programming language called boulder which uses bouldering slang and lingo as i
 
 ## Current supported functionality:
 
-In version 0.1.0, Boulder implemented support for nested function calls, i.e., `send(crux("Marc"))`. However, nested function calls do not support parameter typing as of yet, this only works for single function calls, like so: `block(10)s`, where s types the parameter 10 as a string rather than the default int implementation. 
+In version 0.2.0, Boulder implemented support for function definitions. A function definition in boulder looks something like this: 
 
-Below are the supported functions as of v0.1.0. Functions added in this version are listed in ***bold italics***.
+```HOLD sendAsFloatAndInt(value1) => send(value1)f SLOPER send(value1)i```
+
+`HOLD` is the equivalent of `def` in python, indicating a function definition. Next is the name of the function and the parameters it takes. The `=>` separates the function signature from the function code. Multiple lines of function code are supported by using the `SLOPER` keyword between individual lines. So the above function in Boulder, would have the following equivalent in python:
+
+```
+def sendAsFloatAndInt(value1):
+  print(float(value1))
+  print(int(value1))
+```
+
+**NOTE**: The current implementation of function definitions has not been tested thuroughly and should be treated with caution. Please report any bugs. It is currently unclear whether function definitions with multiple parameters are supported by the implementation.
+
+Below are the supported functions as of v0.2.0. Functions added in this version, or simply the newest functions are listed in ***bold italics***.
 
 | Boulder function  | Python equivalent |
 | ------------- | ------------- |
