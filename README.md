@@ -53,7 +53,7 @@ fullSend("my name is Marc")
 
 To run the program using the interpreter, make sure to have the interpreter and your .boulder file in the same directory. Then proceed to run the interpreter with the filename as a command line argument such as:
 ```
-python BoulderInterpreter.py helloworld.boulder
+python BoulderInterpreterv0.2.0.py helloworld.boulder
 ```
 The output of the above program would be: 
 ```
